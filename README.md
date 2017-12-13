@@ -1,4 +1,4 @@
-# SVR_GARCH_KDE
+# SVR-GARCH-KDE Hybrid
 This repo containes alle the code for using SVR-GARCH-KDE hybrid to forecast Value-at-Risk.
 
 ###############################################################################
