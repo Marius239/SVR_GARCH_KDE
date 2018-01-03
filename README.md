@@ -35,7 +35,9 @@ Functions for estimating the SVR-GARCH-KDE hybrid are contained in the folder
 
 The folder 'Tuning' contains the code 'Tune_VaR_Model.R' which is used to apply
 grid search for the SVR-GARCH-KDE hybrid. The time series needs to be set. All
-results are saved under the corresponding 'Results'-folder in 'Tuning'
+results are saved under the corresponding 'Results'-folder in 'Tuning'. Note 
+that the 'Results'-folder is currently not on GitHub because it demanded to 
+much memory.
 
 *5. Final SVR-GARCH-KDE Analysis*  
 
