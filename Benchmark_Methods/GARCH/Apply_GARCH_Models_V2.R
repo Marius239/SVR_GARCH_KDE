@@ -37,7 +37,7 @@ result_folder      <- "Tuning_2006to2011_FCast_2011to2016_MeanZero"
 # Set parameters 
 ###############################################################################
 
-probs              <- c(0.005, 0.01, 0.025, 0.05) # Quantiles
+probs              <- c(0.01, 0.025, 0.05) # Quantiles
 block_size         <- 251  # Size of blocks used for estimation
 time_int           <- "2011-07-01/2016-06-30"  # Time interval for prediction
 
