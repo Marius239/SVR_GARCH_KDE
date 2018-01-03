@@ -38,7 +38,7 @@ series             <- unlist(lapply(1:n, function(x) strsplit(result_files, "_")
 names(result_data) <- mdl
 
 # Get results of tests
-probs              <- c(0.005, 0.01, 0.025, 0.05)  # x%-Quantiles used in results table
+probs              <- c(0.01, 0.025, 0.05)  # x%-Quantiles used in results table
 list_table         <- lapply(c(1:n), function(x) arrange_results_df(result_data[[x]], probs, mdl[x], series[x]))
 
 # Convert list to data frame (use df_sorted in thesis)
@@ -47,7 +47,7 @@ df_sorted          <- df[order(-df$Quantile, df$Series, df$CC, df$Model, decreas
 
 
 # Analyze mean ranks
-test_quant     <- c(0.5, 1, 2.5,5)  # Specify quantiles for mean rank analysis
+test_quant     <- c(1, 2.5,5)  # Specify quantiles for mean rank analysis
 df_sub         <- df_sorted[df_sorted$Quantile %in% test_quant,]
 df_sub$Model   <- as.character(df_sub$Model)
 df_sub$Model[df_sub$Model == "SVM-KDE"] <- "SVR-KDE"
