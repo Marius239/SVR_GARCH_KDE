@@ -21,8 +21,8 @@ setwd(paste0(Sys.getenv("USERPROFILE"), "/Desktop/Master/Master_Thesis/Code_Abga
 library(quantmod)
 
 # Yahoo finace symbols for NYSE, DAX, Euro Stoxx 50, S&P 500, Nikkei 225
-ts_name    <- c("NYSE", "DAX", "EuroStoxx50", "S&P500", "Nikkei225")
-yf_symbols <- c("^NYA", "^GDAXI", "^STOXX50E", "^GSPC", "^N225")
+ts_name    <- c("EuroStoxx50", "S&P500", "Nikkei225")
+yf_symbols <- c("^STOXX50E", "^GSPC", "^N225")
 
 # Define function to get data for lapply
 get_data <- function(x){
