@@ -1,4 +1,4 @@
-# SVR-GARCH-KDE Hybrid
+# **SVR-GARCH-KDE Hybrid**
 
 # Manual for using the Codes
 
