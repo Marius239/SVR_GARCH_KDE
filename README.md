@@ -20,7 +20,7 @@ Open the folder 'Data' and go to 'R_Code'. Adjust the path in 'setwd(...)' and
 run the code. The data sets will be loaded and constructed. Everything is saved
 under the folder 'Data'.
 
-*2. Benchmark Methods'
+*2. Benchmark Methods*
 
 Open the folder 'Benchmark_Methods' and run 'Apply_GARCH_Models_V2.R'
 The resulting RDS-files are saved under the 'Results'-folder.
