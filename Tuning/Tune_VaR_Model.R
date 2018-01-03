@@ -55,7 +55,7 @@ test_size          <- nrow(ts[time_int])  # Size of test set
 block_size         <- 251  # Size of blocks used for estimation
 start              <- nrow(ts) - test_size - block_size + 1  # Find index for start
 ts_sub             <- ts[start:nrow(ts)]  # Remove irrelevant data
-probs              <- c(0.005, 0.01, 0.025, 0.05)  # Quantiles
+probs              <- c(0.01, 0.025, 0.05)  # Quantiles
 mean_mdl           <- NULL  # Assume zero mean
 
 
