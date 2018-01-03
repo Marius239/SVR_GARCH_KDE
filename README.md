@@ -2,7 +2,7 @@
 
 # Manual for using the Codes
 
-This repo containes alle the code for using SVR-GARCH-KDE hybrid to forecast Value-at-Risk.
+This repo containes all the code for using SVR-GARCH-KDE hybrid to forecast Value-at-Risk.
 
 Remark 1: Note that the following packages are used:
 beepr, rugarch, e1071, quantmod, zoo, doParallel, R.utils, xtable, plotly
