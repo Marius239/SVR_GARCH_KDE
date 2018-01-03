@@ -47,13 +47,12 @@ for(i in 1:3){
   ###############################################################################
   
   # Get results of tests
-  probs              <- c(0.005, 0.01, 0.025, 0.05)  # x%-Quantiles used in results table
+  probs              <- c(0.01, 0.025, 0.05)  # x%-Quantiles used in results table
   n                  <- length(files)
   list_table         <- lapply(1:n, function(x) arrange_results_df(files[[x]][[1]], probs, "SVM_KDE", loop_var[i]))
   
   grid_df            <- Reduce("rbind", lapply(1:n, function(x) cbind(rownames(files[[x]][[2]]),
                                                                       rbind(files[[x]][[2]],
-                                                                            files[[x]][[2]],
                                                                             files[[x]][[2]],
                                                                             files[[x]][[2]]))))
   names(grid_df)[1]  <- "model"
@@ -73,15 +72,13 @@ for(i in 1:3){
   }
   
   
-  df_05 <- get_best_paramters(0.5)
   df_1  <- get_best_paramters(1)
   df_25 <- get_best_paramters(2.5)
   df_5  <- get_best_paramters(5)
   
   head_n <- 1
   
-  df_paras <- rbind(head(df_05[order(df_05$CC, decreasing = TRUE),], head_n),
-                    head(df_1[order(df_1$CC, decreasing = TRUE),], head_n),
+  df_paras <- rbind(head(df_1[order(df_1$CC, decreasing = TRUE),], head_n),
                     head(df_25[order(df_25$CC, decreasing = TRUE),], head_n),
                     head(df_5[order(df_5$CC, decreasing = TRUE),], head_n))
   
