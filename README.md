@@ -58,10 +58,3 @@ end of Section 2.4 is not implemented. Hence, this modification was added by mys
 In the folder 'BestTuningModels_and_TexTables' are the codes 'Create_Best_List_TexTable.R'
 and 'Test_Models_V2'. These produce the tables for the tuning results and model
 comparison in the empirical study, respectively. 
-
-*8. Thesis Figures*
-
-In the folder 'Figures' are the codes that produce and save the figures in for 
-the thesis. The code 'Feature_Mapping_SVR.R' does not produce the exact figure as
-in the thesis. This is due to the limited capabilities of plotly to make 
-appropriate axes. This was done by using paint.
